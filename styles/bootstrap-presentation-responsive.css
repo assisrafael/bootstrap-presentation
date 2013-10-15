@@ -1,0 +1,48 @@
+@media print {
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	#presentation > article {
+		font-size: 1em;
+	}
+	
+	.ptt-fullscreen > article {
+		font-size: 1.5em;
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	#presentation > article {
+		font-size: 0.5em;
+	}
+	
+	.ptt-fullscreen > article {
+		font-size: 0.75em;
+	}
+	
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	#presentation > article {
+		font-size: 0.5em;
+	}
+	
+	.ptt-fullscreen > article {
+		font-size: 0.75em;
+	}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#presentation > article {
+		font-size: 0.5em;
+	}
+	
+	.ptt-fullscreen > article {
+		font-size: 0.75em;
+	}
+}

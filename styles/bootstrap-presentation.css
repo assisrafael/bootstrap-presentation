@@ -1,0 +1,249 @@
+body {font-size:100%;}
+
+.ptt-fullscreen {
+	left: 0px;
+	top: 0px;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding:0;
+}
+
+#presentation,
+.ptt-fullscreen {
+	line-height: 100%;
+	font-size: 1em;
+}
+/* Toolbar
+ * ======= */
+
+.sidebar {
+	font-size: 0.8em;
+}
+
+.sidebar-nav ul {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-height: 490px;
+	padding:0;
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	border-radius: 6px;
+}
+
+.sidebar-nav > ul > li:first-child > a {
+	border-radius: 6px 6px 0 0;
+}
+
+.sidebar-nav > ul > li:last-child > a {
+	border-radius: 0 0 6px 6px;
+}
+
+.sidebar-nav > ul > li > a {
+	border: 1px solid #E5E5E5;
+	display: block;
+	margin: -1px 0 -1px;
+	padding: 9px 15px;
+	text-decoration:none;
+}
+
+.sidebar-nav > ul > li > a:hover {
+	background-color:#F5F5F5;
+}
+
+.sidebar-nav > .active > a {
+	border: 0 none;
+	box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, -1px 0 0 rgba(0, 0, 0, 0.1) inset;
+	padding: 9px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+	z-index: 2;
+}
+
+.sidebar-nav .icon-chevron-right {
+	float: right;
+	margin-right: -6px;
+	margin-top: 2px;
+	opacity: 0.25;
+}
+
+.sidebar-nav a:hover .icon-chevron-right {
+	opacity: 0.5;
+}
+
+.sidebar-nav .active .icon-chevron-right, 
+.sidebar-nav .active a:hover .icon-chevron-right  {
+	background-image: url("../img/glyphicons-halflings-white.png");
+	opacity: 1;
+}
+
+.ptt-toolbar {
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.ptt-toolbar .btn-toolbar {
+	margin-top: 0;
+}
+
+.ptt-toolbar button {
+	padding: 4px 10px;
+}
+
+/* Slides 
+ * ====== */
+#presentation > article.ptt-fullpage > section,
+.ptt-fullscreen > article.ptt-fullpage > section {
+	height: 100%;
+}
+
+#presentation > article.ptt-fullpage > header,
+.ptt-fullscreen > article.ptt-fullpage > header,
+#presentation > article.ptt-fullpage > footer,
+.ptt-fullscreen > article.ptt-fullpage > footer {
+	display: none;
+}
+
+#presentation > article,
+.ptt-fullscreen > article {
+	margin-bottom: 20px;
+	background-clip: padding-box;
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	position: relative;
+	font-size: 1em;
+	line-height: 100%;
+	overflow: hidden;
+}
+
+.ptt-fullscreen > article {
+	font-size: 1.4em;
+}
+
+/*              Normal slides            */
+#presentation > article > header,
+.ptt-fullscreen > article > header {
+	text-align: center;
+	position: relative;
+	border-bottom: 1px solid #EEEEEE;
+	font-size: 3em;
+	line-height: 2em;
+	font-weight: bold;
+	height: 15%;
+}
+
+#presentation > article > section,
+.ptt-fullscreen > article > section {
+	overflow-y: auto;
+	position: relative;
+	font-size: 2em;
+	height: 75%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+#presentation > article > section > *,
+.ptt-fullscreen > article > section > * {
+	margin-top: 2.5%;
+}
+
+#presentation > article > section > footer,
+.ptt-fullscreen > article > section > footer {
+	font-size: 0.5em;
+	position: absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	top:auto;
+}
+
+#presentation > article > section > footer > ul,
+.ptt-fullscreen > article > section > footer > ul {
+	list-style: none;
+}
+
+#presentation > article > footer,
+.ptt-fullscreen > article > footer {
+	background-color: #F5F5F5;
+	border-top: 1px solid #DDDDDD;
+	text-align: center;
+	height: 10%;
+	line-height: 3em;
+}
+
+/*              Opening slides            */
+#presentation > article.ptt-opening {
+
+}
+
+#presentation > article.ptt-opening > header,
+.ptt-fullscreen > article.ptt-opening > header {
+	border-bottom: none;
+	height: 40%;
+	padding-top: 10%;
+	line-height: 2em;
+}
+
+#presentation > article.ptt-opening > header > small,
+.ptt-fullscreen > article.ptt-opening > header > small {
+	display:block;
+	font-size: 60%;
+}
+
+#presentation > article.ptt-opening > section,
+.ptt-fullscreen > article.ptt-opening > section {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#presentation > article.ptt-opening > footer,
+.ptt-fullscreen > article.ptt-opening > footer {
+	display:none;
+}
+
+/*              Ending slides            */
+#presentation > article.ptt-ending > section {
+
+}
+
+#presentation > article.ptt-ending > section > p {
+
+}
+
+/*              Other elements            */
+#presentation *,
+.ptt-fullscreen * {
+	line-height: 110%;
+}
+
+.ptt-fullscreen td,
+.ptt-fullscreen th {
+	line-height: 110%;
+}
+
+#presentation .well,
+.ptt-fullscreen .well {
+	margin-top: 20px;
+}
+
+#presentation dt,
+.ptt-fullscreen dt
+{
+	color: #000;
+	font-weight: bold;
+	padding: 0;
+}
+	
+#presentation dd,
+.ptt-fullscreen dd
+{
+	margin: 0 0 0.5em 0;
+	padding: 0 0 0 0.5em;
+}
+
+#presentation ol,
+.ptt-fullscreen ol {
+	margin-left: 5%;
+}
